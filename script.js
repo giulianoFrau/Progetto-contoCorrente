@@ -75,7 +75,7 @@ const displayMovements = function (movements,sort=false) {
   //mettiamo tutto in una funzione in modo da non dover copiare il codice tante volte
   containerMovements.innerHTML = ''; //svuotiamo le prime righe di default
   const move=sort ? movements.slice().sort((a, b) => a - b) : movements;
-  move.forEach(function (valore, chiave) {
+  move.forEach(function (valore, chiave) { //prima del sort il foreach era su movements
     const type = valore > 0 ? 'deposit' : 'withdrawal'; // per la classe
     //in questa var html mettiamo il blocco html che deve variare con chiave e valora
     const html = `<div class="movements__row"> 
