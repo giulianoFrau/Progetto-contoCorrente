@@ -176,7 +176,7 @@ btnLogin.addEventListener('click', function (e) {
       labelWelcome.textContent = `Benvenuto ${accounts[i].owner}`;
       containerApp.style.opacity = 100;
       displayMovements(accounts[i].movements); //movements xk è l'array di importi dell oggetto account
-      calcPrintBalance(accounts[i].movements);
+      calcPrintBalance(accounts[i]);
       CalcDisplaySummary(accounts[i]);
     }
   }*/
